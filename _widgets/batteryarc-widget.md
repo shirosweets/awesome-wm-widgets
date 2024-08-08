@@ -9,16 +9,16 @@ This widget is more informative version of [battery widget](https://github.com/s
 
 Depending of the battery status it could look following ways:
 
- - ![10_d](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/10_d.png) - less than 15 percent
- - ![10_c](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/10_c.png) - less than 15 percent, charging
- - ![20_d](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/20_d.png) - between 15 and 40 percent
- - ![20_c](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/20_c.png) - between 15 and 40 percent, charging
- - ![80_d](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/80_d.png) - more than 40 percent
- - ![80_c](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/80_c.png) - more than 40 percent, charging
+ - ![10_d](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/10_d.png) - less than 15 percent
+ - ![10_c](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/10_c.png) - less than 15 percent, charging
+ - ![20_d](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/20_d.png) - between 15 and 40 percent
+ - ![20_c](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/20_c.png) - between 15 and 40 percent, charging
+ - ![80_d](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/80_d.png) - more than 40 percent
+ - ![80_c](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/80_c.png) - more than 40 percent, charging
 
 If a battery level is low then warning popup will show up:
 
-![warning](../awesome-wm-widgets/assets/img/screenshots/batteryarc-widget/warning.png)
+![warning](../awesome-wm-widgets/assets/img/widgets/screenshots/batteryarc-widget/warning.png)
 
 ## Customization
 
@@ -26,7 +26,7 @@ It is possible to customize widget by providing a table with all or some of the 
 
 | Name | Default | Description |
 |---|---|---|
-| `font` | Play 6 | Font |
+| `font` | `Play 6` | Font |
 | `arc_thickness` | 2 | Thickness of the arc |
 | `show_current_level`| false | Show current charge level |
 | `size`| 18 | Size of the widget |
@@ -36,12 +36,13 @@ It is possible to customize widget by providing a table with all or some of the 
 | `low_level_color` | `#e53935` | Arc color when battery charge is less that 15% |
 | `medium_level_color` | `#c0ca33` |  Arc color when battery charge is between 15% and 40% |
 | `charging_color` | `#43a047` |  Color of the circle inside the arc when charging  |
-| `warning_msg_title` | _Huston, we have a problem_ | Title of the warning popup |
-| `warning_msg_text` | _Battery is dying_ | Text of the warning popup |
+| `warning_msg_title` | `Huston, we have a problem_` | Title of the warning popup |
+| `warning_msg_text` | `Battery is dying` | Text of the warning popup |
 | `warning_msg_position` | `bottom_right` | Position of the warning popup |
-| `warning_msg_icon` | ~/.config/awesome/awesome-wm-widgets/batteryarc-widget/spaceman.jpg | Icon of the warning popup |
-| `enable_battery_warning` | `true` | Display low battery warning |
+| `warning_msg_icon` | `~/.config/awesome/awesome-wm-widgets/batteryarc-widget/spaceman.jpg` | Icon of the warning popup |
+| `enable_battery_warning` | true | Display low battery warning |
 | `show_notification_mode` | `on_hover` | How to trigger a notification with the battery status: `on_hover`, `on_click` or `off`  |
+| `notification_position` | `top_left` | Where to show she notification when triggered. Values: `top_right`, `top_left`, `bottom_left`, `bottom_right`, `top_middle`, `bottom_middle`. (default `top_right`) |
 
 ## Requirements
 

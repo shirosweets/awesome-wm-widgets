@@ -11,7 +11,7 @@ layout: page
    </a>
 </p>
 
-The widget showing current, hourly and daily weather forecast.
+The widget showing current, hourly and daily weather forecast:
 
 <p align="center">
  <img src="https://github.com/streetturtle/awesome-wm-widgets/raw/master/weather-widget/weather-widget.png" alt="screenshot" style="max-width:100%;">
@@ -32,11 +32,11 @@ It is possible to customize widget by providing a table with all or some of the 
 | api_key | Required | Get it [here](https://openweathermap.org/appid) |
 | font_name | `beautiful.font:gsub("%s%d+$", "")` | **Name** of the font to use e.g. 'Play' |
 | both_units_widget | false | Show temperature in both units - '28°C (83°F) |
-| units | metric | `metric` for celsius, `imperial` for fahrenheit |
+| units | `metric` | `metric` for celsius, `imperial` for fahrenheit |
 | show_hourly_forecast | false | Show hourly forecase section |
 | time_format_12h |false | 12 or 24 hour format (13:00 - default or 1pm) |
 | show_daily_forecast | false | Show daily forecast section |
-| icon_pack_name | weather-underground-icons | Name of the icon pack, could be `weather-underground-icon` or `VitalyGorbachev` or create your own, more details below |
+| icon_pack_name | `weather-underground-icons` | Name of the icon pack, could be `weather-underground-icon` or `VitalyGorbachev` or create your own, more details below |
 | icons_extension | `.png` | File extension of icons in the pack |
 | timeout | 120 | How often in seconds the widget refreshes |
 
@@ -53,7 +53,7 @@ To add your custom icons, create a folder with the pack name under `/icons` and 
 
 #### Custom font, icons
 
-![example1](../awesome-wm-widgets/assets/img/screenshots/weather-widget/example1.png)
+![example1](../awesome-wm-widgets/assets/img/widgets/screenshots/weather-widget/example1.png)
 
 ```lua
 weather_curl_widget({
@@ -72,7 +72,7 @@ weather_curl_widget({
 
 #### Only current weather
 
-![example2](../awesome-wm-widgets/assets/img/screenshots/weather-widget/example2.png)
+![example2](../awesome-wm-widgets/assets/img/widgets/screenshots/weather-widget/example2.png)
 
 ```lua
 weather_curl_widget({
@@ -136,11 +136,11 @@ weather_curl_widget({
 
 Only negative temperature:
 
-![negative](../awesome-wm-widgets/assets/img/screenshots/weather-widget/negative.png)
+![negative](../awesome-wm-widgets/assets/img/widgets/screenshots/weather-widget/negative.png)
 
 Both positive and negative tempertature:
 
-![both](../awesome-wm-widgets/assets/img/screenshots/weather-widget/both.png)
+![both](../awesome-wm-widgets/assets/img/widgets/screenshots/weather-widget/both.png)
 
 ## How it works
 

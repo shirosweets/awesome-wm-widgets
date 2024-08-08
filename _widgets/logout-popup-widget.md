@@ -3,10 +3,10 @@ layout: page
 ---
 # Logout Popup Widget
 
-Widget which allows to perform lock, reboot, log out, power off and sleep actions. It can be called either by a shortcut, or by clicking on a widget in wibar.
+Widget which allows performing lock, reboot, log out, power off and sleep actions. It can be called either by a shortcut, or by clicking on a widget in wibar.
 
 <p align="center">
-    <img src="https://github.com/streetturtle/awesome-wm-widgets/raw/master/logout-widget/screenshot.gif" alt="screenshot">
+    <img src="https://github.com/streetturtle/awesome-wm-widgets/raw/master/logout-popup-widget/screenshot.gif" alt="screenshot">
 </p>
 
 When the widget is shown, following shortcuts can be used:
@@ -56,24 +56,32 @@ Then
 | Name | Default | Description |
 |---|---|---|
 | `icon` | `power.svg` | If used as widget - the path to the widget's icon |
-| `icon_size` | `40` | Size of the icon |
-| `icon_margin` | `16` | Margin around the icon |
+| `icon_size` | 40 | Size of the icon |
+| `icon_margin` | 16 | Margin around the icon |
 | `bg_color` |  `beautiful.bg_normal` | The color the background of the |
 | `accent_color` | `beautiful.bg_focus` | The color of the buttons |
 | `text_color` | `beautiful.fg_normal` | The color of text |
-| `phrases` | `{'Goodbye!'}` | The table with phrase(s) to show, if more than one provided, the phrase is chosen randomly. Leave empty (`{}`) to hide the phrase |
+| `label_color` | `beautiful.fg_normal` | The color of the button's label |
+| `phrases` | `{ 'Goodbye!' }` | The table with phrase(s) to show, if more than one provided, the phrase is chosen randomly. Leave empty (`{}`) to hide the phrase |
+| `hide_on_leave` | `false` | If the popup should be hidden when the mouse leaves it |
 | `onlogout` | `function() awesome.quit() end` | Function which is called when the logout button is pressed |
 | `onlock` | `function() awful.spawn.with_shell("systemctl suspend") end` | Function which is called when the lock button is pressed |
 | `onreboot` | `function() awful.spawn.with_shell("reboot") end` | Function which is called when the reboot button is pressed |
 | `onsuspend` | `function() awful.spawn.with_shell("systemctl suspend") end` | Function which is called when the suspend button is pressed |
 | `onpoweroff` | `function() awful.spawn.with_shell("shutdown now") end` | Function which is called when the poweroff button is pressed |
+| `onlogout_key` | <kbd>l</kbd> | Keybinding to execute the logout function |
+| `onlock_key` | <kbd>k</kbd> | Keybinding to execute the lock function |
+| `onreboot_key` | <kbd>r</kbd> | Keybinding to execute the reboot function |
+| `onsuspend_key` | <kbd>u</kbd> | Keybinding to execute the suspend function |
+| `onpoweroff_key` | <kbd>s</kbd> | Keybinding to execute the poweroff function |
+| `ignore_case` | true | Ignore if CAPS LOCK is enabled |
 
 Some color themes for inspiration:
 
-![nord](../awesome-wm-widgets/assets/img/screenshots/logout-popup-widget/logout-nord.png)
-![outrun](../awesome-wm-widgets/assets/img/screenshots/logout-popup-widget/logout-outrun.png)
-![dark](../awesome-wm-widgets/assets/img/screenshots/logout-popup-widget/logout-dark.png)
-![dracula](../awesome-wm-widgets/assets/img/screenshots/logout-popup-widget/logout-dracula.png)
+![nord](../awesome-wm-widgets/assets/img/widgets/screenshots/logout-popup-widget/logout-nord.png)
+![outrun](../awesome-wm-widgets/assets/img/widgets/screenshots/logout-popup-widget/logout-outrun.png)
+![dark](../awesome-wm-widgets/assets/img/widgets/screenshots/logout-popup-widget/logout-dark.png)
+![dracula](../awesome-wm-widgets/assets/img/widgets/screenshots/logout-popup-widget/logout-dracula.png)
 
 ```lua
 logout.launch{
